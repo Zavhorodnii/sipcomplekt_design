@@ -5,19 +5,14 @@ $(document).ready(function(){
         slidesToShow: 4,
         variableWidth: true,
         // dots: true,
-        // responsive:[
-        //     {
-        //         breakpoint: 500,
-        //         settings: {
-        //             slidesToShow: 2
-        //         }
-        //     }, {
-        //         breakpoint: 500,
-        //         settings: {
-        //             slidesToShow: 2
-        //         }
-        //     }
-        // ]
+        responsive:[
+            {
+                breakpoint: 362,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ],
         appendArrows: $('.control-button-slider2'),
         appendDots: $('.control-button-slider2-dots'),
     });
@@ -25,6 +20,14 @@ $(document).ready(function(){
     $('.ready-build-content-slick-slider').slick({
         slidesToShow: 3,
         variableWidth: true,
+        responsive:[
+            {
+                breakpoint: 362,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ],
         appendArrows: $('.control-button-slider1'),
     })
 
