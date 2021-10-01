@@ -234,6 +234,7 @@ li a {
 .right-block {
   //width: 100%;
   width: 372px;
+  min-width: 255px;
   display: flex;
   justify-content: space-between;
   margin-left: 30px;
@@ -261,6 +262,7 @@ li a {
 
 
 .header-favorites {
+  margin-left: 10px;
   .favorites-content {
     display: flex;
     align-items: center;
@@ -545,6 +547,7 @@ li a {
         font-family: 'Russo One', sans-serif;
         font-size: 40px;
         line-height: 48px;
+        margin-right: 20px;
       }
 
       .project-filter-block {
@@ -2069,6 +2072,91 @@ li a {
     margin-right: 25px;
   }
 }
+@media (max-width: 985px){
+  .section-building{
+    margin-top: 60px;
+  }
+
+  .section-building .container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .section-map-container{
+    flex-direction: column;
+    .map-left{
+      order: 2;
+      width: 100%;
+    }
+    .write-right{
+      width: 100%;
+      order: 1;
+    }
+  }
+}
+
+@media (max-width: 961px){
+  .intro-middle-container{
+    margin-top: 69px;
+    .intro-title-block {
+      margin-left: 90px;
+      & .main-intro-title {
+        font-size: 30px;
+      }
+    }
+  }
+  .menu{
+    display: none;
+  }
+  .menu-burger{
+    margin-left: 20px;
+  }
+  .left-side-image{
+    img{
+      width: 100%;
+    }
+  }
+
+  .footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .footer-content-middle{
+      .footer-content-middle-menu{
+        justify-content: center;
+      }
+    }
+    .footer-content-right{
+      //order: 2;
+    }
+    .footer-content-left{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0;
+      margin-bottom: 20px;
+      .footer-content-left-logo{
+        margin-bottom: 0;
+      }
+    }
+
+    .footer-content-right-address{
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 738px){
+
+  .benefits-build-title-content-items{
+    & .benefits-build-title-content-item{
+      margin-right: 0 !important;
+    }
+  }
+
+}
 @media (max-width: 375px){
   .intro-middle-container{
     margin-top: 69px;
@@ -2084,4 +2172,5 @@ li a {
     margin-right: 25px;
   }
 }
+
 
