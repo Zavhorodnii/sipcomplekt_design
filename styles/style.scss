@@ -1239,6 +1239,7 @@ li a {
 
   .reviews-build-item {
     max-width: 440px;
+    padding: 0 8px;
     width: 100%;
     margin-right: 20px;
 
@@ -2172,7 +2173,10 @@ li a {
 
 }
 //@media (max-width: 375px){
-@media (max-width: 425px){
+@media (max-width: 580px){
+  .slick-list{
+    overflow: hidden !important;
+  }
   .container{
     padding-left: 8px !important;
     padding-right: 8px;
@@ -2579,6 +2583,7 @@ li a {
       .reviews-build-content{
         .reviews-build-item{
           max-width: 362px;
+          padding: 0 8px;
           margin-right: 0;
           .item-content{
             .image-content{
@@ -2983,7 +2988,7 @@ li a {
     top: 0 !important;
     left: 0 !important;
     width: 100% !important;
-    height: 100vh;
+    height: 100%;
     z-index: 50;
     //overflow: hidden !important;
     border-radius: 0 !important;
@@ -3123,9 +3128,9 @@ li a {
 
   .popup-calculate-project-position{
     .popup-calculate-project-bg{
-      width: 375px;
+      width: 100%;
       border-radius: 0;
-      height: 100vh;
+      height: 100%;
       padding: 24px 8px;
       .close-popup{
         svg{
@@ -3200,7 +3205,7 @@ li a {
         position: fixed !important;
         top: 0;
         left: 0;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         background: #FFFFFF;
         padding: 16px 8px 34px 8px;
@@ -3281,6 +3286,84 @@ li a {
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 341px){
+  .intro{
+    .intro-middle-container{
+      .intro-title-block{
+        .main-intro-title{
+          p{
+            font-size: 30px;
+          }
+        }
+      }
+      .intro-middle-right-side{
+        ul{
+          margin-top: 80px;
+        }
+      }
+    }
+    .intro-bottom{
+      .huge-text{
+        .small-text{
+          p{
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  .slick-list{
+    overflow: hidden;
+  }
+  .ready-build{
+    & .ready-build-content-slick-slider{
+      .ready-item{
+        width: 304px;
+        padding: 8px;
+        .image-content{
+          .big-image{
+            img{
+              height: auto !important;
+              width: calc(100% - 20px);
+            }
+          }
+          .small-image{
+            top: 185px !important;
+          }
+        }
+      }
+    }
+  }
+  .reviews-build{
+    .reviews-build-item{
+      padding: 0 8px;
+      width: 304px;
+      .image-content{
+        img{
+          width: 100% !important;
+          height: auto !important;
+        }
+        .link-more{
+          a{
+            top: auto !important;
+            left: auto !important;
+            right: 20px !important;
+            bottom: 25px !important;
+          }
+        }
+      }
+    }
+  }
+  .section-projects{
+    .show-filter-opened-filter-mobile{
+      .show-filter-opened-filter-items{
+        .show-filter-opened-filter-item{
+          width: 140px !important;
         }
       }
     }

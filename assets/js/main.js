@@ -7,9 +7,10 @@ $(document).ready(function(){
         // dots: true,
         responsive:[
             {
-                breakpoint: 362,
+                breakpoint: 500,
                 settings: {
-                    slidesToShow: 1
+                    variableWidth: true,
+                    slidesToShow: 2
                 }
             }
         ],
