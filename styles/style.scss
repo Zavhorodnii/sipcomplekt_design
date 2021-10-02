@@ -539,8 +539,8 @@ li a {
     padding-top: 60px;
 
     .section-header {
-      display: flex;
-      justify-content: space-between;
+      //display: flex;
+      //justify-content: space-between;
       margin-bottom: 13px;
 
       .project-title {
@@ -553,12 +553,18 @@ li a {
       .project-filter-block {
         position: relative;
 
+        .project-filter-block-title{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 8px;
+        }
+
         .filter {
           cursor: pointer;
           display: flex;
           justify-content: end;
           align-items: center;
-          margin-bottom: 8px;
         }
 
         .filter-style {
@@ -590,6 +596,7 @@ li a {
           ul {
             display: flex;
             flex-wrap: wrap;
+            justify-content: flex-end;
 
             li {
               margin-right: 12px;
@@ -618,7 +625,7 @@ li a {
         .show-filter-opened-filter {
           position: absolute;
           //top: -23px;
-          top: -18px;
+          top: -8px;
           right: -24px;
 
           width: 841px;
@@ -2407,6 +2414,16 @@ li a {
           }
         }
       }
+      .selected-filter-params{
+        font-size: 13px;
+        ul{
+          li{
+            p{
+              font-size: 13px;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -2918,6 +2935,221 @@ li a {
             }
           }
         }
+      }
+    }
+  }
+
+  .menu-burger{
+    position: initial;
+  }
+  .open-menu-burger{
+    position: fixed;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100vh;
+    z-index: 50;
+    overflow: hidden !important;
+    border-radius: 0 !important;
+    .open-menu-burger-pc{
+      display:none;
+    }
+    .open-menu-burger-mob{
+      display: block !important;
+
+      .open-menu-burger-mob-content{
+        margin-top: 24px;
+        .open-menu-burger-mob-content-header{
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 18px;
+          .open-menu-burger-mob-content-header-image{
+            img{
+              width: 210px;
+              height: 38px;
+            }
+          }
+          .open-menu-burger-mob-content-header-close{
+            svg{
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+        .open-menu-burger-mob-content-phone{
+          margin-bottom: 16px;
+          li a{
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+        .border{
+          width: 100%;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .open-menu-burger-mob-content-favorites{
+          margin: 18px auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          a{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 168px;
+            height: 32px;
+
+            background: #FFFFFF;
+            border-radius: 2px;
+
+
+            font-size: 14px;
+            line-height: 18px;
+            color: #398860;
+
+            .link-content{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .title, .count{
+                margin-right: 12px;
+              }
+              .star{
+                svg{
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+            }
+
+          }
+        }
+        .open-menu-burger-mob-content-menu{
+          margin-top: 24px;
+          display: flex;
+          justify-content: space-between;
+          ul{
+            width: 175px;
+          }
+          .left-menu{
+            li{
+              margin-bottom: 24px;
+              a{
+                text-transform: uppercase;
+                font-size: 14px;
+                line-height: 16px;
+
+                color: #FFFFFF;
+              }
+            }
+          }
+          .right-menu{
+            li{
+              margin-bottom: 24px;
+              a{
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 18px;
+
+                color: #FFFFFF;
+              }
+            }
+          }
+        }
+        .open-menu-burger-mob-content-social{
+          .footer-content-left-social-title{
+            margin-bottom: 8px;
+            p{
+              font-weight: normal;
+              font-size: 10px;
+              line-height: 14px;
+              color: #FFFFFF;
+            }
+          }
+          .footer-content-left-social-list{
+            ul{
+              display: flex;
+              li{
+                margin-right: 16px;
+                &:last-child{
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .popup-calculate-project-position{
+    .popup-calculate-project-bg{
+      width: 375px;
+      border-radius: 0;
+      height: 100vh;
+      padding: 24px 8px;
+      .close-popup{
+        svg{
+          width: 16px;
+          height: 16px;
+        }
+        margin-bottom: 20px;
+      }
+
+      .popup-calculate-project-content-fields{
+        .popup-calculate-project-content-fields-title{
+          margin-bottom: 12px;
+          text-align: start;
+          p{
+            font-weight: normal;
+            font-size: 26px;
+            line-height: 32px;
+          }
+        }
+        .popup-calculate-project-content-fields-subtitle{
+          margin-bottom: 24px;
+          text-align: start;
+          p{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #2D2D2D;
+          }
+        }
+
+        .popup-calculate-project-content-fields-form{
+          form{
+            width: 100%;
+          }
+          input, textarea{
+            width: 100%;
+          }
+          .file{
+            width: 100%;
+          }
+          button{
+
+            width: 220px;
+            height: 42px;
+
+            background: #398860;
+            box-shadow: 0px 4px 8px rgba(7, 78, 42, 0.1);
+            border-radius: 6px;
+            padding: 0;
+
+
+            font-size: 16px;
+            line-height: 22px;
+
+            text-align: center;
+
+            color: #FFFFFF;
+          }
+        }
+
       }
     }
   }

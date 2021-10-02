@@ -354,8 +354,6 @@ li {
   .section-projects .container {
     padding-top: 60px; }
     .section-projects .container .section-header {
-      display: flex;
-      justify-content: space-between;
       margin-bottom: 13px; }
       .section-projects .container .section-header .project-title {
         font-family: 'Russo One', sans-serif;
@@ -364,12 +362,16 @@ li {
         margin-right: 20px; }
       .section-projects .container .section-header .project-filter-block {
         position: relative; }
+        .section-projects .container .section-header .project-filter-block .project-filter-block-title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 8px; }
         .section-projects .container .section-header .project-filter-block .filter {
           cursor: pointer;
           display: flex;
           justify-content: end;
-          align-items: center;
-          margin-bottom: 8px; }
+          align-items: center; }
         .section-projects .container .section-header .project-filter-block .filter-style {
           margin-left: 12px; }
         .section-projects .container .section-header .project-filter-block .title {
@@ -387,7 +389,8 @@ li {
           color: #808080; }
           .section-projects .container .section-header .project-filter-block .selected-filter-params ul {
             display: flex;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+            justify-content: flex-end; }
             .section-projects .container .section-header .project-filter-block .selected-filter-params ul li {
               margin-right: 12px; }
               .section-projects .container .section-header .project-filter-block .selected-filter-params ul li .filter-item {
@@ -401,7 +404,7 @@ li {
                 margin-right: 0; }
         .section-projects .container .section-header .project-filter-block .show-filter-opened-filter {
           position: absolute;
-          top: -18px;
+          top: -8px;
           right: -24px;
           width: 841px;
           padding: 14px 24px 34px 24px;
@@ -1514,6 +1517,10 @@ li {
         height: 16px; }
       .section-projects .container .section-build .all-projects .more-projects .link a .arrow {
         margin-left: 4px; }
+    .section-projects .container .selected-filter-params {
+      font-size: 13px; }
+      .section-projects .container .selected-filter-params ul li p {
+        font-size: 13px; }
   .ready-build {
     padding-left: 8px !important; }
     .ready-build .title {
@@ -1825,4 +1832,141 @@ li {
             margin-right: 16px; }
             .footer .footer-content-mobile .footer-content-button .footer-content-left-social .footer-content-left-social-list ul li a svg {
               width: 16px;
-              height: 16px; } }
+              height: 16px; }
+  .menu-burger {
+    position: initial; }
+  .open-menu-burger {
+    position: fixed;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100vh;
+    z-index: 50;
+    overflow: hidden !important;
+    border-radius: 0 !important; }
+    .open-menu-burger .open-menu-burger-pc {
+      display: none; }
+    .open-menu-burger .open-menu-burger-mob {
+      display: block !important; }
+      .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content {
+        margin-top: 24px; }
+        .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-header {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 18px; }
+          .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-header .open-menu-burger-mob-content-header-image img {
+            width: 210px;
+            height: 38px; }
+          .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-header .open-menu-burger-mob-content-header-close svg {
+            width: 16px;
+            height: 16px; }
+        .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-phone {
+          margin-bottom: 16px; }
+          .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-phone li a {
+            font-size: 14px;
+            line-height: 18px; }
+        .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .border {
+          width: 100%;
+          border: 1px solid rgba(255, 255, 255, 0.1); }
+        .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-favorites {
+          margin: 18px auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-favorites a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 168px;
+            height: 32px;
+            background: #FFFFFF;
+            border-radius: 2px;
+            font-size: 14px;
+            line-height: 18px;
+            color: #398860; }
+            .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-favorites a .link-content {
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-favorites a .link-content .title, .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-favorites a .link-content .count {
+                margin-right: 12px; }
+              .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-favorites a .link-content .star svg {
+                width: 24px;
+                height: 24px; }
+        .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-menu {
+          margin-top: 24px;
+          display: flex;
+          justify-content: space-between; }
+          .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-menu ul {
+            width: 175px; }
+          .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-menu .left-menu li {
+            margin-bottom: 24px; }
+            .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-menu .left-menu li a {
+              text-transform: uppercase;
+              font-size: 14px;
+              line-height: 16px;
+              color: #FFFFFF; }
+          .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-menu .right-menu li {
+            margin-bottom: 24px; }
+            .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-menu .right-menu li a {
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 18px;
+              color: #FFFFFF; }
+        .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-social .footer-content-left-social-title {
+          margin-bottom: 8px; }
+          .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-social .footer-content-left-social-title p {
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 14px;
+            color: #FFFFFF; }
+        .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-social .footer-content-left-social-list ul {
+          display: flex; }
+          .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-social .footer-content-left-social-list ul li {
+            margin-right: 16px; }
+            .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-social .footer-content-left-social-list ul li:last-child {
+              margin-right: 0; }
+  .popup-calculate-project-position .popup-calculate-project-bg {
+    width: 375px;
+    border-radius: 0;
+    height: 100vh;
+    padding: 24px 8px; }
+    .popup-calculate-project-position .popup-calculate-project-bg .close-popup {
+      margin-bottom: 20px; }
+      .popup-calculate-project-position .popup-calculate-project-bg .close-popup svg {
+        width: 16px;
+        height: 16px; }
+    .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-title {
+      margin-bottom: 12px;
+      text-align: start; }
+      .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-title p {
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 32px; }
+    .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-subtitle {
+      margin-bottom: 24px;
+      text-align: start; }
+      .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-subtitle p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #2D2D2D; }
+    .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form form {
+      width: 100%; }
+    .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form input, .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form textarea {
+      width: 100%; }
+    .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form .file {
+      width: 100%; }
+    .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form button {
+      width: 220px;
+      height: 42px;
+      background: #398860;
+      box-shadow: 0px 4px 8px rgba(7, 78, 42, 0.1);
+      border-radius: 6px;
+      padding: 0;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: #FFFFFF; } }
