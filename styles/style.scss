@@ -2997,6 +2997,7 @@ li a {
     }
     .open-menu-burger-mob{
       display: block !important;
+      overflow-y: scroll;
 
       .open-menu-burger-mob-content{
         margin-top: 24px;
@@ -3130,6 +3131,7 @@ li a {
     .popup-calculate-project-bg{
       width: 100%;
       border-radius: 0;
+      overflow-y: scroll;
       height: 100%;
       padding: 24px 8px;
       .close-popup{

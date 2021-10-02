@@ -1874,7 +1874,8 @@ li {
     .open-menu-burger .open-menu-burger-pc {
       display: none; }
     .open-menu-burger .open-menu-burger-mob {
-      display: block !important; }
+      display: block !important;
+      overflow-y: scroll; }
       .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content {
         margin-top: 24px; }
         .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-header {
@@ -1958,6 +1959,7 @@ li {
   .popup-calculate-project-position .popup-calculate-project-bg {
     width: 100%;
     border-radius: 0;
+    overflow-y: scroll;
     height: 100%;
     padding: 24px 8px; }
     .popup-calculate-project-position .popup-calculate-project-bg .close-popup {
