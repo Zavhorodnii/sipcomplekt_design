@@ -299,10 +299,10 @@
                                 домокомплектов</p>
                         </div>
                         <div class="intro-title-button-section">
-                            <div class="button-intro-title">
+                            <div class="button-intro-title ">
                                 <p>Отправить заявку на просчет</p>
                             </div>
-                            <button type="submit">Рассчитать стоимость</button>
+                            <button class="open-write-popup" type="submit">Рассчитать стоимость</button>
                         </div>
                     </div>
                     <div class="intro-middle-right-side">
@@ -478,6 +478,14 @@
                 <div class="title">
                     <p>Строительство домов от производителя sip-панелей</p>
                 </div>
+                <div class="building-left-side-mobile none">
+                    <div class="left-side-image">
+                        <img src="assets/img/home_1.jpg" alt="">
+                    </div>
+                    <div class="description-left-side">
+                        <p>У нас самые доступные <br><a href="#">цены на дома из СИП панелей.</a></p>
+                    </div>
+                </div>
                 <div class="sub-title">
                     <p>Строим качественные дома по каркасной технологии из sip-панелей в Москве и Московской области</p>
                 </div>
@@ -528,135 +536,265 @@
                 </div>
 
                 <!--                        filter-->
-                <div class="show-filter-opened-filter js-shove-filter none">
-                    <div class="show-filter-opened-filter-header">
-                        <button type="submit">Применить фильтр</button>
-                        <div class="filter some-class js-close-filter ">
-                            <div class="title filter-style">
-                                <p>Фильтр</p>
-                            </div>
-                            <div class="show-filter filter-style">
-                                <svg width="16" height="10" viewBox="0 0 16 10" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.56093 9.13825L0.180933 1.73778C-0.0607219 1.49531 -0.0603156 1.10275 0.182183 0.860686C0.424651 0.618812 0.817431 0.619437 1.05927 0.861936L8.00003 7.82191L14.9407 0.861686C15.1826 0.619218 15.5751 0.618593 15.8176 0.860436C15.9392 0.981779 16 1.14075 16 1.29972C16 1.45828 15.9396 1.61662 15.8189 1.73775L8.43909 9.13825C8.3229 9.25503 8.16477 9.32056 8.00003 9.32056C7.83528 9.32056 7.67734 9.25484 7.56093 9.13825Z"
-                                          fill="#2D2D2D"/>
-                                </svg>
-                            </div>
-                            <div class="filter-icon filter-style">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M22.7099 1.80714e-06H1.31268C0.935287 -0.000712046 0.589308 0.210112 0.416794 0.54586C0.241901 0.886128 0.272596 1.29588 0.496031 1.60664L8.33506 12.6494C8.33768 12.6532 8.34054 12.6568 8.34315 12.6606C8.62798 13.0451 8.78193 13.5108 8.78289 13.9896V22.9927C8.78122 23.2594 8.88592 23.5154 9.0739 23.7046C9.26188 23.8938 9.51744 23.9999 9.78394 23.9999C9.91957 23.9999 10.0535 23.9728 10.1787 23.9209L14.5836 22.2412C14.9784 22.1208 15.2404 21.7484 15.2404 21.2999V13.9896C15.2411 13.5111 15.3953 13.0451 15.6799 12.6606C15.6825 12.6568 15.6853 12.6532 15.688 12.6494L23.5268 1.60617C23.7502 1.29564 23.7809 0.886128 23.606 0.54586C23.4335 0.210112 23.0875 -0.000712046 22.7099 1.80714e-06ZM14.6976 11.9389C14.2598 12.5331 14.023 13.2514 14.0216 13.9896V21.1519L10.0012 22.6847V13.9896C9.99976 13.2514 9.763 12.5331 9.32494 11.9389L1.71457 1.21831H22.3082L14.6976 11.9389Z"
-                                          fill="#2D2D2D"/>
-                                </svg>
+                <div class="show-filter-opened-filter-shell js-shove-filter none">
+                    <div class="show-filter-opened-filter ">
+                        <div class="show-filter-opened-filter-header">
+                            <button type="submit">Применить фильтр</button>
+                            <div class="filter some-class js-close-filter ">
+                                <div class="title filter-style">
+                                    <p>Фильтр</p>
+                                </div>
+                                <div class="show-filter filter-style">
+                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.56093 9.13825L0.180933 1.73778C-0.0607219 1.49531 -0.0603156 1.10275 0.182183 0.860686C0.424651 0.618812 0.817431 0.619437 1.05927 0.861936L8.00003 7.82191L14.9407 0.861686C15.1826 0.619218 15.5751 0.618593 15.8176 0.860436C15.9392 0.981779 16 1.14075 16 1.29972C16 1.45828 15.9396 1.61662 15.8189 1.73775L8.43909 9.13825C8.3229 9.25503 8.16477 9.32056 8.00003 9.32056C7.83528 9.32056 7.67734 9.25484 7.56093 9.13825Z"
+                                              fill="#2D2D2D"/>
+                                    </svg>
+                                </div>
+                                <div class="filter-icon filter-style">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.7099 1.80714e-06H1.31268C0.935287 -0.000712046 0.589308 0.210112 0.416794 0.54586C0.241901 0.886128 0.272596 1.29588 0.496031 1.60664L8.33506 12.6494C8.33768 12.6532 8.34054 12.6568 8.34315 12.6606C8.62798 13.0451 8.78193 13.5108 8.78289 13.9896V22.9927C8.78122 23.2594 8.88592 23.5154 9.0739 23.7046C9.26188 23.8938 9.51744 23.9999 9.78394 23.9999C9.91957 23.9999 10.0535 23.9728 10.1787 23.9209L14.5836 22.2412C14.9784 22.1208 15.2404 21.7484 15.2404 21.2999V13.9896C15.2411 13.5111 15.3953 13.0451 15.6799 12.6606C15.6825 12.6568 15.6853 12.6532 15.688 12.6494L23.5268 1.60617C23.7502 1.29564 23.7809 0.886128 23.606 0.54586C23.4335 0.210112 23.0875 -0.000712046 22.7099 1.80714e-06ZM14.6976 11.9389C14.2598 12.5331 14.023 13.2514 14.0216 13.9896V21.1519L10.0012 22.6847V13.9896C9.99976 13.2514 9.763 12.5331 9.32494 11.9389L1.71457 1.21831H22.3082L14.6976 11.9389Z"
+                                              fill="#2D2D2D"/>
+                                    </svg>
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="show-filter-opened-filter-items ">
+                            <div class="show-filter-opened-filter-item">
+                                <p>Категория</p>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="1" name="scales"
+                                               checked>
+                                        <label for="1">Дома</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="2" name="scales"
+                                               checked>
+                                        <label for="2">Гаражи</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="show-filter-opened-filter-item">
+                                <p>Цена</p>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="3" name="scales"
+                                        >
+                                        <label for="3">до 1500000</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="4" name="scales"
+                                        >
+                                        <label for="4">до 2000000</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="5" name="scales"
+                                        >
+                                        <label for="5">до 3000000</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="6" name="scales"
+                                        >
+                                        <label for="6">до 4000000</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="7" name="scales"
+                                        >
+                                        <label for="7">до 5000000</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="show-filter-opened-filter-item">
+                                <p>Площадь</p>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="11" name="scales"
+                                        >
+                                        <label for="11">до 100 м2</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="8" name="scales"
+                                        >
+                                        <label for="8">от 100 до 150 м2</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="9" name="scales"
+                                        >
+                                        <label for="9">от 150 до 200 м2</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="10" name="scales"
+                                        >
+                                        <label for="10">от 200 м2</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="show-filter-opened-filter-item">
+                                <p>Этажей</p>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="12" name="scales"
+                                        >
+                                        <label for="12">1</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="13" name="scales"
+                                        >
+                                        <label for="13">1,5</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="14" name="scales"
+                                        >
+                                        <label for="14">2</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="show-filter-opened-filter-item">
+                                <p>Технология</p>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="15" name="scales"
+                                        >
+                                        <label for="15">Каркас</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="16" name="scales"
+                                        >
+                                        <label for="16">Сип-панель</label>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="show-filter-opened-filter-items ">
-                        <div class="show-filter-opened-filter-item">
-                            <p>Категория</p>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="1" name="scales"
-                                           checked>
-                                    <label for="1">Дома</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="2" name="scales"
-                                           checked>
-                                    <label for="2">Гаражи</label>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="show-filter-opened-filter-item">
-                            <p>Цена</p>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="3" name="scales"
-                                    >
-                                    <label for="3">до 1500000</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="4" name="scales"
-                                    >
-                                    <label for="4">до 2000000</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="5" name="scales"
-                                    >
-                                    <label for="5">до 3000000</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="6" name="scales"
-                                    >
-                                    <label for="6">до 4000000</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="7" name="scales"
-                                    >
-                                    <label for="7">до 5000000</label>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="show-filter-opened-filter-item">
-                            <p>Площадь</p>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="11" name="scales"
-                                    >
-                                    <label for="11">до 100 м2</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="8" name="scales"
-                                    >
-                                    <label for="8">от 100 до 150 м2</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="9" name="scales"
-                                    >
-                                    <label for="9">от 150 до 200 м2</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="10" name="scales"
-                                    >
-                                    <label for="10">от 200 м2</label>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="show-filter-opened-filter-item">
-                            <p>Этажей</p>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="12" name="scales"
-                                    >
-                                    <label for="12">1</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="13" name="scales"
-                                    >
-                                    <label for="13">1,5</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="14" name="scales"
-                                    >
-                                    <label for="14">2</label>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="show-filter-opened-filter-item">
-                            <p>Технология</p>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="15" name="scales"
-                                    >
-                                    <label for="15">Каркас</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="16" name="scales"
-                                    >
-                                    <label for="16">Сип-панель</label>
-                                </li>
-                            </ul>
+
+                    <div class="show-filter-opened-filter-mobile none">
+                        <div class="show-filter-opened-filter-mobile-content">
+                            <div class="show-filter-opened-filter-mobile-content-control">
+                                <div class="show-filter-opened-filter-mobile-content-control-header Russo-One-title">
+                                    <p>Проект</p>
+                                </div>
+                                <div class="show-filter-opened-filter-mobile-content-control-close">
+                                    <div class="js-close-filter">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.3256 12.0008L23.7252 1.60119C24.0913 1.23505 24.0913 0.64143 23.7252 0.275337C23.359 -0.0907557 22.7654 -0.0908026 22.3993 0.275337L11.9997 10.6749L1.60022 0.275337C1.23408 -0.0908026 0.640454 -0.0908026 0.274361 0.275337C-0.0917322 0.641477 -0.0917791 1.2351 0.274361 1.60119L10.6739 12.0007L0.274361 22.4003C-0.0917791 22.7664 -0.0917791 23.3601 0.274361 23.7261C0.457407 23.9092 0.69736 24.0007 0.937312 24.0007C1.17727 24.0007 1.41717 23.9092 1.60026 23.7261L11.9997 13.3266L22.3993 23.7261C22.5823 23.9092 22.8223 24.0007 23.0622 24.0007C23.3022 24.0007 23.5421 23.9092 23.7252 23.7261C24.0913 23.36 24.0913 22.7664 23.7252 22.4003L13.3256 12.0008Z" fill="#2D2D2D"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="show-filter-opened-filter-mobile-content-filter-title">
+                                <p>Фильтр</p>
+                            </div>
+
+                            <div class="show-filter-opened-filter-items ">
+                                <div class="show-filter-opened-filter-item">
+                                    <p>Категория</p>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="1" name="scales"
+                                                   checked>
+                                            <label for="1">Дома</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="2" name="scales"
+                                                   checked>
+                                            <label for="2">Гаражи</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="show-filter-opened-filter-item">
+                                    <p>Цена</p>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="3" name="scales"
+                                            >
+                                            <label for="3">до 1500000</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="4" name="scales"
+                                            >
+                                            <label for="4">до 2000000</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="5" name="scales"
+                                            >
+                                            <label for="5">до 3000000</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="6" name="scales"
+                                            >
+                                            <label for="6">до 4000000</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="7" name="scales"
+                                            >
+                                            <label for="7">до 5000000</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="show-filter-opened-filter-item">
+                                    <p>Площадь</p>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="11" name="scales"
+                                            >
+                                            <label for="11">до 100 м2</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="8" name="scales"
+                                            >
+                                            <label for="8">от 100 до 150 м2</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="9" name="scales"
+                                            >
+                                            <label for="9">от 150 до 200 м2</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="10" name="scales"
+                                            >
+                                            <label for="10">от 200 м2</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="show-filter-opened-filter-item">
+                                    <p>Этажей</p>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="12" name="scales"
+                                            >
+                                            <label for="12">1</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="13" name="scales"
+                                            >
+                                            <label for="13">1,5</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="14" name="scales"
+                                            >
+                                            <label for="14">2</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="show-filter-opened-filter-item">
+                                    <p>Технология</p>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="15" name="scales"
+                                            >
+                                            <label for="15">Каркас</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="16" name="scales"
+                                            >
+                                            <label for="16">Сип-панель</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
