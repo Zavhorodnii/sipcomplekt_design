@@ -336,13 +336,20 @@ li {
       .section-building .building-right-side .read-more a {
         color: #9ACC77; }
     .section-building .building-right-side .button button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 26px;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: normal;
       width: 304px;
       height: 44px;
-      border: none;
-      cursor: pointer;
       background: #398860;
-      box-shadow: 0px 4px 8px rgba(7, 78, 42, 0.1);
+      box-shadow: 0px 4px 18px rgba(7, 78, 42, 0.4);
       border-radius: 6px;
+      border: none;
       font-size: 18px;
       line-height: 24px;
       /* identical to box height, or 133% */
@@ -473,7 +480,6 @@ li {
       padding-bottom: 60px; }
       .section-projects .container .section-build .build-item {
         width: 440px;
-        height: 486px;
         background: #FFFFFF;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
         border-radius: 6px;
@@ -506,10 +512,15 @@ li {
               color: #808080; }
             .section-projects .container .section-build .build-item .item-header .favorites-block .favorites-icon {
               margin-left: 8px; }
+            .section-projects .container .section-build .build-item .item-header .favorites-block .active .favorites-icon-not-selected {
+              display: none; }
+            .section-projects .container .section-build .build-item .item-header .favorites-block .active .favorites-icon-not-selected-active {
+              display: block !important; }
         .section-projects .container .section-build .build-item .item-content {
           margin: 0 auto; }
           .section-projects .container .section-build .build-item .item-content .image img {
             height: 242px;
+            width: -webkit-fill-available;
             margin-bottom: 22px; }
           .section-projects .container .section-build .build-item .item-content .price {
             font-weight: 500;
@@ -524,9 +535,11 @@ li {
             text-align: center;
             margin-bottom: 30px;
             color: #808080; }
-          .section-projects .container .section-build .build-item .item-content button {
-            display: block;
+          .section-projects .container .section-build .build-item .item-content a {
+            display: flex;
+            justify-content: center;
             margin: 0 auto;
+            align-items: center;
             max-width: 222px;
             width: 100%;
             height: 44px;
@@ -540,7 +553,7 @@ li {
             line-height: 24px;
             text-align: center;
             color: #398860; }
-            .section-projects .container .section-build .build-item .item-content button:hover {
+            .section-projects .container .section-build .build-item .item-content a:hover {
               background: #398860;
               border: 1px solid #398860;
               box-sizing: border-box;
@@ -549,20 +562,22 @@ li {
       .section-projects .container .section-build .all-projects {
         padding: 0 !important;
         position: relative; }
-        .section-projects .container .section-build .all-projects .more-projects img {
-          width: 440px !important;
-          height: 486px;
-          background: #FFFFFF;
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
-          border-radius: 6px;
-          opacity: 0.3; }
         .section-projects .container .section-build .all-projects .more-projects {
+          height: 496px; }
+          .section-projects .container .section-build .all-projects .more-projects img {
+            width: 440px !important;
+            height: 100%;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+            border-radius: 6px;
+            opacity: 0.3; }
+        .section-projects .container .section-build .all-projects .more-projects-link {
           position: absolute;
           top: 50%;
           left: 50%;
           margin-right: -50%;
           transform: translate(-50%, -50%); }
-          .section-projects .container .section-build .all-projects .more-projects .link a {
+          .section-projects .container .section-build .all-projects .more-projects-link .link a {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -578,27 +593,27 @@ li {
             /* Note: backdrop-filter has minimal browser support */
             border-radius: 6px;
             color: #398860; }
-            .section-projects .container .section-build .all-projects .more-projects .link a .arrow {
+            .section-projects .container .section-build .all-projects .more-projects-link .link a .arrow {
               margin-left: 10px; }
-              .section-projects .container .section-build .all-projects .more-projects .link a .arrow .up, .section-projects .container .section-build .all-projects .more-projects .link a .arrow .down {
+              .section-projects .container .section-build .all-projects .more-projects-link .link a .arrow .up, .section-projects .container .section-build .all-projects .more-projects-link .link a .arrow .down {
                 display: flex; }
-            .section-projects .container .section-build .all-projects .more-projects .link a .link-content {
+            .section-projects .container .section-build .all-projects .more-projects-link .link a .link-content {
               display: flex;
               justify-content: center;
               height: 44px;
               align-items: center; }
-              .section-projects .container .section-build .all-projects .more-projects .link a .link-content .down {
+              .section-projects .container .section-build .all-projects .more-projects-link .link a .link-content .down {
                 display: none; }
-            .section-projects .container .section-build .all-projects .more-projects .link a:hover {
+            .section-projects .container .section-build .all-projects .more-projects-link .link a:hover {
               background: #398860;
               border: 1px solid #398860;
               box-sizing: border-box;
               box-shadow: 0px 4px 18px rgba(14, 116, 64, 0.4);
               backdrop-filter: blur(23px);
               color: #FFFFFF; }
-              .section-projects .container .section-build .all-projects .more-projects .link a:hover .up {
+              .section-projects .container .section-build .all-projects .more-projects-link .link a:hover .up {
                 display: none !important; }
-              .section-projects .container .section-build .all-projects .more-projects .link a:hover .down {
+              .section-projects .container .section-build .all-projects .more-projects-link .link a:hover .down {
                 display: flex !important;
                 align-items: center; }
 
@@ -783,7 +798,8 @@ li {
   width: 100%;
   margin: 0 auto;
   background: #FAFAFA;
-  padding-top: 60px; }
+  padding-top: 60px;
+  min-height: 240px; }
   .reviews-build .reviews-build-content-slider .slick-list {
     overflow: hidden; }
   .reviews-build .reviews-build-title h2 {
@@ -981,7 +997,7 @@ li {
   background: #FAFAFA; }
   .build-your-house .build-your-house-content {
     padding-top: 60px;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
     display: flex;
     justify-content: flex-end;
     align-items: center; }
@@ -1198,6 +1214,7 @@ li {
     width: 390px;
     color: #2D2D2D; }
   .popup-calculate-project-bg .popup-calculate-project-content .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form {
+    text-transform: initial !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1212,7 +1229,7 @@ li {
       font-weight: 400;
       border-bottom: 2px solid rgba(0, 0, 0, 0.2);
       border-radius: 1px;
-      width: 440px;
+      width: 100%;
       height: 26px; }
     .popup-calculate-project-bg .popup-calculate-project-content .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form textarea {
       background: 0 0;
@@ -1224,27 +1241,32 @@ li {
       font-weight: 400;
       border-bottom: 2px solid rgba(0, 0, 0, 0.2);
       border-radius: 1px;
-      width: 440px;
+      width: 100%;
       height: 26px;
       padding-bottom: 10px;
       resize: vertical; }
     .popup-calculate-project-bg .popup-calculate-project-content .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form .form-group {
+      font-family: 'Roboto', sans-serif;
       margin-bottom: 24px; }
     .popup-calculate-project-bg .popup-calculate-project-content .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form .file {
       border-bottom: 2px solid rgba(0, 0, 0, 0.2);
       border-radius: 1px;
-      width: 440px;
+      width: 100%;
       height: 26px; }
       .popup-calculate-project-bg .popup-calculate-project-content .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form .file .wpcf7-form-control-wrap {
         display: none; }
       .popup-calculate-project-bg .popup-calculate-project-content .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form .file label {
-        max-width: 175px;
+        text-transform: initial;
+        max-width: fit-content !important;
         padding: 0;
-        font-size: 14px;
-        line-height: 18px;
-        height: 18px;
+        font-size: 14px !important;
+        line-height: 18px !important;
+        height: 18px !important;
         cursor: pointer;
         vertical-align: middle;
+        background: #FFFFFF !important;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
         text-decoration-line: underline;
         color: #808080; }
       .popup-calculate-project-bg .popup-calculate-project-content .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form .file span {
@@ -1277,13 +1299,16 @@ li {
       text-align: right;
       color: #808080; }
     .popup-calculate-project-bg .popup-calculate-project-content .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form button {
+      font-family: 'Roboto', sans-serif;
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       padding: 10px 56px;
-      width: 256px;
-      height: 44px;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      text-transform: initial;
       background: #398860;
       box-shadow: 0px 4px 8px rgba(7, 78, 42, 0.1);
       border-radius: 6px;
@@ -1516,7 +1541,7 @@ li {
         font-size: 10px;
         line-height: 14px;
         margin-bottom: 12px; }
-      .section-projects .container .section-build .build-item .item-content button {
+      .section-projects .container .section-build .build-item .item-content a {
         margin-bottom: 16px;
         width: 98px;
         height: 22px;
@@ -1730,7 +1755,8 @@ li {
   .build-your-house {
     display: none; }
   .section-map .section-map-container .map-left {
-    display: none; }
+    width: 100%;
+    height: 160px; }
   .section-map .section-map-container .map-left-mobile {
     order: 2;
     display: block !important; }
@@ -1956,47 +1982,54 @@ li {
             margin-right: 16px; }
             .open-menu-burger .open-menu-burger-mob .open-menu-burger-mob-content .open-menu-burger-mob-content-social .footer-content-left-social-list ul li:last-child {
               margin-right: 0; }
-  .popup-calculate-project-position .popup-calculate-project-bg {
+  .popup-calculate-project-bg {
     width: 100%;
     border-radius: 0;
-    overflow-y: scroll;
     height: 100%;
     padding: 24px 8px; }
-    .popup-calculate-project-position .popup-calculate-project-bg .close-popup {
+    .popup-calculate-project-bg .close-popup {
       margin-bottom: 20px; }
-      .popup-calculate-project-position .popup-calculate-project-bg .close-popup svg {
+      .popup-calculate-project-bg .close-popup svg {
         width: 16px;
         height: 16px; }
-    .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-title {
+    .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-title {
       margin-bottom: 12px;
       text-align: start; }
-      .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-title p {
+      .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-title p {
         font-weight: normal;
         font-size: 26px;
         line-height: 32px; }
-    .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-subtitle {
+    .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-subtitle {
       margin-bottom: 24px;
       text-align: start; }
-      .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-subtitle p {
+      .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-subtitle p {
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
         color: #2D2D2D; }
-    .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form form {
+    .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form form {
       width: 100%; }
-    .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form input, .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form textarea {
+    .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form input, .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form textarea {
       width: 100%; }
-    .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form .file {
+    .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form .file {
       width: 100%; }
-    .popup-calculate-project-position .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form button {
+    .popup-calculate-project-bg .popup-calculate-project-content-fields .popup-calculate-project-content-fields-form button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0 !important;
+      margin-left: 0;
       width: 220px;
       height: 42px;
       background: #398860;
       box-shadow: 0px 4px 8px rgba(7, 78, 42, 0.1);
       border-radius: 6px;
-      padding: 0;
-      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
       line-height: 22px;
+      /* identical to box height, or 137% */
       text-align: center;
       color: #FFFFFF; }
   .show-filter-opened-filter-shell .show-filter-opened-filter {
